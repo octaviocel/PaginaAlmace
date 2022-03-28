@@ -3,7 +3,7 @@
 
 ## Para Iniciar el proyecto 
 
-### Configurar variables de entorno 
+### Configurar variables de entorno archivo .env
 
 API_PORT=   //puerto por el que escucha la api
 
