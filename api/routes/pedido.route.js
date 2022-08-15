@@ -7,6 +7,8 @@ module.exports = app =>{
 
     router.get("/", pedido.findAll);
 
+    router.get("/maximo", pedido.findByMaxId);
+
     router.get("/:id", pedido.findOne);
 
     router.put("/:id", pedido.update);

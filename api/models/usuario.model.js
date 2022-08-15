@@ -9,9 +9,6 @@ module.exports = (sequelize, Sequelize) => {
         apeMat: {
             type: Sequelize.STRING
         },
-        apePat: {
-            type: Sequelize.STRING
-        },
         direccion: {
             type: Sequelize.STRING
         },
@@ -29,6 +26,9 @@ module.exports = (sequelize, Sequelize) => {
         },
         password: {
             type: Sequelize.STRING
+        },
+        rol:{
+            type: Sequelize.INTEGER
         }
     });
 

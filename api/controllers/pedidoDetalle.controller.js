@@ -67,9 +67,15 @@ exports.findPedido = (req, res) => {
     const pedidoId = req.params.pedidoId;
     var condition = pedidoId ? { pedidoId: { [Op.iLike]: `%${pedidoId}%` } } : null;
 
-    PedidoDeta.findAll({ where: condition })
+    PedidoDeta.findAll(
+        {
+            where: {
+                pedidoId: pedidoId
+            }
+        })
         .then(data => {
             res.send(data);
+
         })
         .catch(err => {
             res.status(500).send({

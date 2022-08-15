@@ -1,0 +1,25 @@
+CONFIGURAR VARIABLES DE ENTORNO ARCHIVO .env
+
+    REACT_APP_API=""  //url de la API ejemplo "http://localhost:9595/"
+
+INSTALAR DEPENDENCIAS
+
+npm install @date-io/date-fns
+npm install @date-io/dayjs
+npm install @date-io/luxon
+npm install @date-io/moment
+npm install @emotion/react
+npm install @emotion/styled
+npm install @fortawesome/fontawesome-svg-core
+npm install @fortawesome/free-solid-svg-icons
+npm install @fortawesome/react-fontawesome
+npm install @mui/icons-material
+npm install @mui/material
+npm install @mui/x-date-pickers
+npm install axios
+npm install date-fns
+npm install js-sha256
+npm install react-router-dom
+npm install sweetalert2
+npm install jspdf
+npm install jspdf-autotable

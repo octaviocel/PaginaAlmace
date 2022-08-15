@@ -9,11 +9,16 @@ module.exports = app =>{
     //REcuperar todos los Usuarios
     router.get("/", usuarios.findAll);
 
+    // Encontrar todos los Usuarios por correo
+    router.get("/email=:email", usuarios.findByEmail);
+
     //Encontrar Usuario por id
     router.get("/:id", usuarios.findOne);
 
     //Actualizar usuario por id
     router.put("/:id", usuarios.update);
+    
+    router.put("/password/:id", usuarios.updatePass);
 
     //Eliminar un usuario por id
     router.delete("/:id", usuarios.delete);

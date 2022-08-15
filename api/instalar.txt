@@ -1,0 +1,26 @@
+CONFIGURAR VARIABLES DE ENTORNO ARCHIVO .env
+
+    API_PORT=""   //puerto de la api
+
+    MA_DB_HOST=""  //Base de datos host
+    MA_DB_USER=""   //user
+    MA_DB_PWD=""    //paswword
+    MA_DB_NAME=""   // nombre de la base de datos
+    MA_DB_SYNC=""   // false o true, para hacer cambios en la base de datos //true si es por primera vez
+
+    AWS_BUCKET_NAME=""  //Bucket donde se almacena las imagenes que se suben, credenciales de Aws en este caso
+    AWS_REGION=""
+    AWS_ACCESS_KEY=""
+    AWS_SECRET_KEY=""
+
+INSTALAR DEPENDENCIAS
+
+npm install aws-sdk
+npm install body-parser
+npm install cors
+npm install dotenv
+npm install express
+npm install multer
+npm install pg
+npm install pg-hstore
+npm install sequelize

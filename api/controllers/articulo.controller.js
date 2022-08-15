@@ -9,7 +9,8 @@ exports.create = (req, res) => {
         !req.body.descripcion &&
         !req.body.cantidadStock &&
         !req.body.precioUnitario &&
-        !req.body.caducidad
+        !req.body.caducidad &&
+        !req.body.linkImage
     ) {
         res.status(400).send({
             message: "El contenido no puede ser vacio",
@@ -22,7 +23,8 @@ exports.create = (req, res) => {
         descripcion: req.body.descripcion,
         cantidadStock: req.body.cantidadStock,
         precioUnitario:req.body.precioUnitario,
-        caducidad:req.body.caducidad 
+        caducidad:req.body.caducidad,
+        linkImage: req.body.linkImage
     }
 
     Item.create(item)

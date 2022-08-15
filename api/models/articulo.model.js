@@ -14,6 +14,9 @@ module.exports = (sequelize, Sequelize) => {
         },
         caducidad: {
             type: Sequelize.DATE
+        },
+        linkImage:{
+            type: Sequelize.STRING
         }
     });
 
